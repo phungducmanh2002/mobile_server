@@ -1,0 +1,6 @@
+const USER_ROLE = {
+  ADMIN: "ADMIN",
+  STAFF: "STAFF",
+  CUSTOMER: "CUSTOMER",
+  HOTELIER: "HOTELIER",
+};
