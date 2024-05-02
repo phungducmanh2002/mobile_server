@@ -74,47 +74,6 @@ class SemesterController {
       res.status(200).json(semester);
     },
   ];
-  static GetAllRoomAdded = [
-    /**kiem tra req */
-    (req, res, next) => {
-      const semesterId = req.params?.semesterId;
-      if (!semesterId) {
-        res.status(400).json({ msg: "Vui lòng cung cấp đầy đủ thông tin!" });
-        return;
-      }
-      req.semesterId = semesterId;
-      next();
-    },
-    /** */
-    async (req, res, next) => {
-      let rooms = await SemesterService.GetAllRoomAddedBySemester(
-        req.semesterId
-      );
-      if (!rooms) {
-        rooms = [];
-      }
-      res.status(200).json(rooms);
-    },
-  ];
-  static GetAllRoomNotAdded = [
-    /**kiem tra req */
-    (req, res, next) => {
-      const semesterId = req.params?.semesterId;
-      if (!semesterId) {
-        res.status(400).json({ msg: "Vui lòng cung cấp đầy đủ thông tin!" });
-        return;
-      }
-      req.semesterId = semesterId;
-      next();
-    },
-    /** */
-    async (req, res, next) => {
-      let rooms = await SemesterService.GetAllRoomNotAddedBySemester(
-        req.semesterId
-      );
-      res.status(200).json(rooms);
-    },
-  ];
   static SemesterAddRoom = [
     express.urlencoded({ extended: false }),
     express.json(),
@@ -169,6 +128,43 @@ class SemesterController {
         return;
       }
       res.status(200).json(semesterRoom);
+    },
+  ];
+  static GetAllRoomAdded = [
+    /**kiem tra req */
+    (req, res, next) => {
+      const semesterId = req.params?.semesterId;
+      if (!semesterId) {
+        res.status(400).json({ msg: "Vui lòng cung cấp đầy đủ thông tin!" });
+        return;
+      }
+      req.semesterId = semesterId;
+      next();
+    },
+    /** */
+    async (req, res, next) => {
+      let rooms = await SemesterService.GetAllRoomAdded(req.semesterId);
+      if (!rooms) {
+        rooms = [];
+      }
+      res.status(200).json(rooms);
+    },
+  ];
+  static GetAllRoomNotAdded = [
+    /**kiem tra req */
+    (req, res, next) => {
+      const semesterId = req.params?.semesterId;
+      if (!semesterId) {
+        res.status(400).json({ msg: "Vui lòng cung cấp đầy đủ thông tin!" });
+        return;
+      }
+      req.semesterId = semesterId;
+      next();
+    },
+    /** */
+    async (req, res, next) => {
+      let rooms = await SemesterService.GetAllRoomNotAdded(req.semesterId);
+      res.status(200).json(rooms);
     },
   ];
 }

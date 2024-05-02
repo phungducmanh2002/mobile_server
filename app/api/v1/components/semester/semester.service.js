@@ -1,7 +1,8 @@
-const { where, Op } = require("sequelize");
+const { where, Op, QueryTypes } = require("sequelize");
 const SemesterModel = require("./semester.model");
 const RoomModel = require("../room/room.model");
 const RoomSemesterModel = require("../roomSemester/room.semester.model");
+const sequelizeConfig = require("../../configs/sequelize.config");
 
 class SemesterService {
   static async CreateSemester(semesterDto) {
@@ -78,6 +79,28 @@ class SemesterService {
       return await semesterRoom.destroy();
     }
     return null;
+  }
+  static async GetAllRoomAdded(idSemester) {
+    const sql = `
+    select * from room where id in (select idRoom from room_semester where idSemester = :idSemester)
+    `;
+    const result = await sequelizeConfig.instance.query(sql, {
+      replacements: { idSemester: idSemester },
+      type: QueryTypes.SELECT,
+    });
+
+    return result;
+  }
+  static async GetAllRoomNotAdded(idSemester) {
+    const sql = `
+    select * from room where id not in (select idRoom from room_semester where idSemester = :idSemester)
+    `;
+    const result = await sequelizeConfig.instance.query(sql, {
+      replacements: { idSemester: idSemester },
+      type: QueryTypes.SELECT,
+    });
+
+    return result;
   }
 }
 

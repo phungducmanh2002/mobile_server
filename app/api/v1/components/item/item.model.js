@@ -5,8 +5,8 @@ class ItemModel {
   static model = instance.define(
     "item",
     {
-      roomItemName: {
-        type: DataTypes.INTEGER,
+      itemName: {
+        type: DataTypes.STRING(50),
         allowNull: false,
         unique: false,
       },

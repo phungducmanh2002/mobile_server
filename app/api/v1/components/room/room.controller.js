@@ -24,6 +24,10 @@ class RoomController {
     /**GET DETAILS */
     async (req, res, next) => {
       const roomDetails = await RoomService.GeDetailstById(req.roomId);
+      if (!roomDetails) {
+        res.status(400).json({ msg: "Room not found" });
+        return;
+      }
       res.status(200).json(roomDetails);
     },
   ];
@@ -127,6 +131,101 @@ class RoomController {
         return;
       }
       res.status(200).json({ idResource: resouce.id });
+    },
+  ];
+  static GetAllItemAdded = [
+    (req, res, next) => {
+      const idRoom = req?.params?.idRoom;
+      if (!idRoom) {
+        res.status(400).json({ msg: "Vui long cung cap du thong tin" });
+        return;
+      }
+      req.idRoom = idRoom;
+      next();
+    },
+    /** */
+    async (req, res, next) => {
+      const room = await RoomService.GetItemAdded(req.idRoom);
+      if (!room) {
+        res.status(500).json({ msg: "NOT FOUND" });
+        return;
+      }
+      res.status(200).json(room);
+    },
+  ];
+  static GetAllItemNotAdded = [
+    (req, res, next) => {
+      const idRoom = req?.params?.idRoom;
+      if (!idRoom) {
+        res.status(400).json({ msg: "Vui long cung cap du thong tin" });
+        return;
+      }
+      req.idRoom = idRoom;
+      next();
+    },
+    /** */
+    async (req, res, next) => {
+      const room = await RoomService.GetItemNotAdded(req.idRoom);
+      if (!room) {
+        res.status(500).json({ msg: "NOT FOUND" });
+        return;
+      }
+      res.status(200).json(room);
+    },
+  ];
+  static AddItem = [
+    /**Check */
+    (req, res, next) => {
+      const idRoom = req.params?.idRoom;
+      const idItem = req.params?.idItem;
+      const quantity = req.params?.quantity;
+
+      if (!idRoom || !idItem || !quantity) {
+        res.status(400).json({ msg: "INVALID DATA" });
+        return;
+      }
+
+      req.idRoom = idRoom;
+      req.idItem = idItem;
+      req.quantity = parseInt(quantity);
+      next();
+    },
+    /** */
+    async (req, res, next) => {
+      const newRoomItem = await RoomService.AddRoomItem(
+        req.idRoom,
+        req.idItem,
+        req.quantity
+      );
+      if (!newRoomItem) {
+        res.status(500).json({ msg: "SERVER ERRROR" });
+        return;
+      }
+      res.status(200).json(newRoomItem);
+    },
+  ];
+  static DeleteRoomItem = [
+    /**Check */
+    (req, res, next) => {
+      const idRoom = req.params?.idRoom;
+      const idItem = req.params?.idItem;
+
+      if (!idRoom || !idItem) {
+        res.status(400).json({ msg: "INVALID DATA" });
+        return;
+      }
+
+      req.idRoom = idRoom;
+      req.idItem = idItem;
+      next();
+    },
+    /** */
+    async (req, res, next) => {
+      const deletedRoomItem = await RoomService.DeleteRoomItem(
+        req.idRoom,
+        req.idItem
+      );
+      res.status(200).json(deletedRoomItem);
     },
   ];
 }

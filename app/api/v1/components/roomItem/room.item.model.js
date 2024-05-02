@@ -15,6 +15,12 @@ class RoomItemModel {
         allowNull: false,
         unique: false,
       },
+      quantity: {
+        type: DataTypes.INTEGER,
+        default: 0,
+        allowNull: false,
+        unique: false,
+      },
     },
     {
       freezeTableName: true,
