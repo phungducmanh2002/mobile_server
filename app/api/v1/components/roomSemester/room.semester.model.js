@@ -5,6 +5,11 @@ class RoomSemesterModel {
   static model = instance.define(
     "room_semester",
     {
+      id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
       idRoom: {
         type: DataTypes.INTEGER,
         allowNull: false,

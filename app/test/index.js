@@ -1,7 +1,9 @@
 const { Op } = require("sequelize");
 const TestSemester = require("./model/semester");
 const SemesterModel = require("../api/v1/components/semester/semester.model");
-console.log("SEMESTER TEST");
+const TestRegis = require("./model/roomSemester");
+const TestBill = require("./model/bill");
+// console.log("SEMESTER TEST");
 
 // TestSemester.GenTable();
 // TestSemester.CreateDataErr();
@@ -33,3 +35,23 @@ console.log("SEMESTER TEST");
 // const c = (date3[Op.between] = [date1, date2]);
 
 // console.log(c);
+
+// TestRegis.CreateRegis();
+
+// TestBill.GetRegisBill(36).then((rsl) => {
+//   if (!rsl) {
+//     console.log("DUME");
+//   }
+//   console.log(rsl);
+// });
+
+// TestBill.GetElectricBill(12).then((rsl) => {
+//   if (!rsl) {
+//     console.log("DUME");
+//   }
+//   console.log(rsl);
+// });
+
+TestBill.GetBill(2).then((bill) => {
+  console.log(bill);
+});

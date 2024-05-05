@@ -45,6 +45,12 @@ class RoomModel {
           min: 0,
         },
       },
+      slot: {
+        type: DataTypes.INTEGER,
+        default: 0,
+        allowNull: true,
+        unique: false,
+      },
     },
     {
       freezeTableName: true,

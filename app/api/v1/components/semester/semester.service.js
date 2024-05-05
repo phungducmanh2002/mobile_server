@@ -69,20 +69,42 @@ class SemesterService {
     }
   }
   static async SemesterRemoveRoom(idSemester, idRoom) {
-    const semesterRoom = await RoomSemesterModel.model.findOne({
-      where: {
-        idSemester: idSemester,
-        idRoom: idRoom,
-      },
-    });
-    if (semesterRoom) {
-      return await semesterRoom.destroy();
+    const registeds = await SemesterService.GetRoomSemesterRegisted(
+      idSemester,
+      idRoom
+    );
+    if (registeds.length > 0) {
+      return null;
     }
+
+    try {
+      const semesterRoom = await RoomSemesterModel.model.findOne({
+        where: {
+          idSemester: idSemester,
+          idRoom: idRoom,
+        },
+      });
+      if (semesterRoom) {
+        return await semesterRoom.destroy();
+      }
+    } catch (err) {}
     return null;
   }
   static async GetAllRoomAdded(idSemester) {
     const sql = `
-    select * from room where id in (select idRoom from room_semester where idSemester = :idSemester)
+    
+    select * from
+    (
+      select idRoom, slotUse = count(regis.id)
+      from regis 
+      right join
+      (select * from room_semester where idSemester = :idSemester) as rsmt
+      on regis.idRoomSemester = rsmt.id
+      group by idRoom
+    ) as rtt
+    inner join room
+    on rtt.idRoom = room.id
+
     `;
     const result = await sequelizeConfig.instance.query(sql, {
       replacements: { idSemester: idSemester },
@@ -95,6 +117,43 @@ class SemesterService {
     const sql = `
     select * from room where id not in (select idRoom from room_semester where idSemester = :idSemester)
     `;
+    const result = await sequelizeConfig.instance.query(sql, {
+      replacements: { idSemester: idSemester },
+      type: QueryTypes.SELECT,
+    });
+
+    return result;
+  }
+  static async GetSemesterOpen() {
+    const sql = `
+      select *
+      from (select top 1 * from semester order by createdAt DESC) as smt
+      where DATEADD(DAY,10,startAt) > GETDATE()
+      `;
+    const result = await sequelizeConfig.instance.query(sql, {
+      type: QueryTypes.SELECT,
+    });
+
+    return result;
+  }
+  static async GetRoomSemesterRegisted(idSemester, idRoom) {
+    const sql = `
+    select * from regis where idRoomSemester in (select id from room_semester where idRoom = :idRoom and idSemester = :idSemester)
+    `;
+
+    const result = await sequelizeConfig.instance.query(sql, {
+      replacements: { idSemester: idSemester, idRoom: idRoom },
+      type: QueryTypes.SELECT,
+    });
+
+    return result;
+  }
+  static async GetRoomNameInSemester(idSemester) {
+    const sql = `
+          select idRoomSemester=rsmt.id , roomName = room.roomName from room
+          inner join
+          (select * from room_semester where idSemester = :idSemester) as rsmt on rsmt.idRoom = room.id
+        `;
     const result = await sequelizeConfig.instance.query(sql, {
       replacements: { idSemester: idSemester },
       type: QueryTypes.SELECT,

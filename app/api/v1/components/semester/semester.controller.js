@@ -167,6 +167,43 @@ class SemesterController {
       res.status(200).json(rooms);
     },
   ];
+  static GetSemesterOpen = [
+    async (req, res, next) => {
+      const result = await SemesterService.GetSemesterOpen();
+      res.status(200).json(result);
+    },
+  ];
+  static RegistationRoom = [
+    /**Check */
+    (req, res, next) => {
+      const idSemester = req.params?.idSemester;
+      if (!idSemester) {
+        res.status(400).json({ msg: "Invalid data" });
+        return;
+      }
+      req.idSemester = idSemester;
+      next();
+    },
+    async (req, res, next) => {},
+  ];
+  static GetRoomNameInSemester = [
+    (req, res, next) => {
+      const idSemester = req.params?.idSemester;
+      if (!idSemester) {
+        res.status(400).json({ msg: "Invalid request" });
+        return;
+      }
+
+      req.idSemester = idSemester;
+      next();
+    },
+    async (req, res, next) => {
+      const roomNames = await SemesterService.GetRoomNameInSemester(
+        req.idSemester
+      );
+      res.status(200).json(roomNames);
+    },
+  ];
 }
 
 module.exports = SemesterController;
