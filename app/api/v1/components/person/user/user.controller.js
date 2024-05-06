@@ -206,6 +206,14 @@ class UserController {
       }
       next();
     },
+    /**Check active account */
+    (req, res, next) => {
+      if (req.user.accountStatus == 0) {
+        res.status(200).json(null);
+        return;
+      }
+      next();
+    },
     /**Sinh token */
     (req, res, next) => {
       const user = req.user;
@@ -261,6 +269,96 @@ class UserController {
         return;
       }
       res.status(200).json({ idResource: resouce.id });
+    },
+  ];
+  static SendActivationCode2 = [
+    (req, res, next) => {
+      const email = req?.params?.email;
+      if (!email) {
+        res.status(400).json({ msg: "INVALID REQUEST" });
+        return;
+      }
+
+      req.email = email;
+      next();
+    },
+    /**Check trạng thái tài khoản */
+    async (req, res, next) => {
+      const user = await UserService.GetUserByEmail(req.email);
+      if (user.accountStatus != 0) {
+        res.status(400).json({ msg: "Tài khoản đã được kích hoạt!" });
+        return;
+      }
+      req.user = user;
+      next();
+    },
+    /**Generate activation code */
+    async (req, res, next) => {
+      const obj = await UserService.GenerateActivationCode2(req.user);
+      if (!obj) {
+        res.status(500).json({ msg: "Lỗi sinh mã kích hoạt tài khoản!" });
+        return;
+      }
+      const gmailRsl = GmailService.SendActivationCode(obj.email, obj.code);
+      if (!gmailRsl) {
+        res.status(500).json({ msg: "Lỗi gửi email!" });
+        return;
+      }
+      res.status(200).json({
+        msg: `Mã kích hoạt đã được gửi tới email của bạn: ${obj.email}`,
+      });
+    },
+  ];
+  static ActiveAccount2 = [
+    express.urlencoded({ extended: false }),
+    express.json(),
+    /**Kiểm tra code and user id */
+    (req, res, next) => {
+      const userCode = req.body;
+      if (!userCode) {
+        res.status(400).json({ msg: "Vui lòng cung cấp đầy đủ thông tin!" });
+        return;
+      }
+      req.userCode = userCode;
+      next();
+    },
+    /**Check trạng thái tài khoản */
+    async (req, res, next) => {
+      const email = req.userCode.email;
+      const activeCode = req.userCode.activeCode;
+
+      if (!email || !activeCode) {
+        res.status(400).json({ msg: "Vui lòng cung cấp đầy đủ thông tin!" });
+        return;
+      }
+
+      const user = await UserService.GetUserByEmail(email);
+
+      if (!user) {
+        res.status(400).json({ msg: "User không tồn tại!" });
+        return;
+      }
+
+      if (user.accountStatus != 0) {
+        res.status(400).json({ msg: "Tài khoản đã được kích hoạt!" });
+        return;
+      }
+      req.user = user;
+      req.activeCode = activeCode;
+      next();
+    },
+    /**Active account */
+    async (req, res, next) => {
+      const isActive = await UserService.ActiveAccount(
+        req.user,
+        req.activeCode
+      );
+
+      if (!isActive) {
+        res.status(400).json({ msg: "Mã kích hoạt không đúng!" });
+        return;
+      }
+      res.status(200).json({ msg: "Tài khoản của bạn đã được kích hoạt!" });
     },
   ];
 }

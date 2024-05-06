@@ -179,6 +179,52 @@ class BillController {
       res.status(200).json(bills);
     },
   ];
+  static GetAllRoomBillInTimeRange = [
+    (req, res, next) => {
+      const fromTime = req?.query?.fromTime;
+      const toTime = req?.query?.toTime;
+
+      if (!fromTime || !toTime) {
+        res.status(400).json("Invalid request");
+        return;
+      }
+
+      req.fromTime = new Date(fromTime);
+      req.toTime = new Date(toTime);
+
+      next();
+    },
+    async (req, res, next) => {
+      const bills = await BillService.GetAllRoomBillByTimeRange(
+        req.fromTime,
+        req.toTime
+      );
+      res.status(200).json(bills);
+    },
+  ];
+  static GetAllElectricWaterBillInTimeRange = [
+    (req, res, next) => {
+      const fromTime = req?.query?.fromTime;
+      const toTime = req?.query?.toTime;
+
+      if (!fromTime || !toTime) {
+        res.status(400).json("Invalid request");
+        return;
+      }
+
+      req.fromTime = new Date(fromTime);
+      req.toTime = new Date(toTime);
+
+      next();
+    },
+    async (req, res, next) => {
+      const bills = await BillService.GetAllElectricWaterBillByTimeRange(
+        req.fromTime,
+        req.toTime
+      );
+      res.status(200).json(bills);
+    },
+  ];
 }
 
 module.exports = BillController;

@@ -304,6 +304,50 @@ class BillService {
 
     return bills;
   }
+  static async GetAllRoomBillByTimeRange(fromTime, toTime) {
+    const sql = `
+    select bill.*, semester.roomPrice
+    from (select * from bill where createdAt between :fromTime and :toTime ) as bill
+    inner join regis
+    on bill.idRegis = regis.id
+    inner join room_semester
+    on regis.idRoomSemester = room_semester.id
+    inner join semester
+    on room_semester.idSemester = semester.id
+    `;
+
+    const bills = await sequelizeConfig.instance.query(sql, {
+      replacements: {
+        fromTime: fromTime,
+        toTime: toTime,
+      },
+      type: QueryTypes.SELECT,
+    });
+
+    return bills;
+  }
+  static async GetAllElectricWaterBillByTimeRange(fromTime, toTime) {
+    const sql = `
+    select bill.*, semester.electricPrice, semester.waterPrice, electricWater.electricNumber, electricWater.waterNumber
+    from (select * from bill where createdAt between :fromTime and :toTime) as bill
+    inner join electricWater
+    on bill.idElectricWater = electricWater.id
+    inner join room_semester
+    on electricWater.idRoomSemester = room_semester.id
+    inner join semester
+    on room_semester.idSemester = semester.id
+    `;
+
+    const bills = await sequelizeConfig.instance.query(sql, {
+      replacements: {
+        fromTime: fromTime,
+        toTime: toTime,
+      },
+      type: QueryTypes.SELECT,
+    });
+
+    return bills;
+  }
 }
 
 module.exports = BillService;

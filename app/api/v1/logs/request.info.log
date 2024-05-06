@@ -46188,3 +46188,1513 @@
     'user-agent': 'okhttp/3.12.1'
   }
 }
+[2024-05-05T22:23:09.771] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/signup',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '147',
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:23:09.824] [WARN] signup - UserDto {
+  id: 4,
+  firstName: 'Yoki',
+  lastName: 'Kim',
+  gender: 0,
+  email: 'ducmanhphungducmanh@gmail.com',
+  idRole: 3,
+  idResource: null,
+  accountStatus: 0,
+  createdAt: 2024-05-05T15:23:09.810Z,
+  updatedAt: 2024-05-05T15:23:09.810Z,
+  userRole: undefined
+}
+[2024-05-05T22:23:10.198] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code/4',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:23:39.552] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code/4',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:23:45.956] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code/4',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:23:55.481] [INFO] request info - {
+  METHOD: 'PUT',
+  URL: '/user/active',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '33',
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:23:59.266] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/signup',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '114',
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:23:59.308] [WARN] signup - UserDto {
+  id: 5,
+  firstName: '1',
+  lastName: '1',
+  gender: 0,
+  email: '1',
+  idRole: 3,
+  idResource: null,
+  accountStatus: 0,
+  createdAt: 2024-05-05T15:23:59.302Z,
+  updatedAt: 2024-05-05T15:23:59.302Z,
+  userRole: undefined
+}
+[2024-05-05T22:23:59.587] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code/5',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-05T22:24:03.885] [INFO] request info - {
+  METHOD: 'PUT',
+  URL: '/user/active',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '33',
+    host: '192.168.1.12:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:32:27.722] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/room-bill-in-time-range',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'ced05dc8-967c-455f-a0ac-0a982b8e4064',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:32:49.544] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/room-bill-in-time-range',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '9b839072-21a9-432a-9bce-318575447978',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:33:34.953] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/room-bill-in-time-range',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '5d809362-a357-40dc-a9c8-613f83c1475c',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:34:12.711] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/room-bill-in-time-range?fromTime=%272024-01-01%27&toTime=%272024-01-01%27',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'af7f065c-297f-4727-9f2d-af7511f00570',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:34:53.313] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/room-bill-in-time-range?fromTime=2024-01-01&toTime=2024-01-01',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'b047c09d-c646-4ea6-b5e9-d7c238c4b958',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:35:26.959] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'f6c148b5-41c1-431f-806c-dc7453d0b1c2',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:35:38.217] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/my-bill-by-semester/1/3',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '1ace63a7-bb42-4f08-904e-adc340ad3071',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:36:12.010] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'fffa1b7a-10b3-40f3-9937-c70f255e08ac',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:36:52.778] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/cak',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '1f5728b6-871f-4d5d-9992-ce56114942b4',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:38:01.289] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '700f41f7-9e46-4719-a96b-1ea48863686d',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:38:16.653] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '548b3fd8-bf03-4433-832c-b0b64806e2a6',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:39:10.709] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'ce7a693f-59bf-4188-bde6-da7cece8abf4',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:39:29.131] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTiem=2024-1-1&toTime=2024-5-5',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '19e4bf97-e1ab-49df-ae51-7055a70ae53e',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:39:46.783] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTiem=2024-1-1&toTime=2024-5-5',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '7f27f5d0-79af-4e5e-91bb-25eb98b6661f',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:39:54.072] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=2024-1-1&toTime=2024-5-5',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'c51a5ca4-0063-4bdd-b6ce-6c8cef757f1e',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:40:10.726] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=2024-1-1&toTime=2024-5-5',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'd8c747e7-6751-4d52-9ac6-40f151011b7d',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T12:49:04.904] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Mon%20May%2006%2012%3A49%3A03%20GMT%2B07%3A00%202024&toTime=Mon%20May%2006%2012%3A49%3A03%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:49:30.040] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Mon%20May%2006%2012%3A49%3A28%20GMT%2B07%3A00%202024&toTime=Mon%20May%2006%2012%3A49%3A28%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:49:44.445] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Mon%20May%2006%2012%3A49%3A43%20GMT%2B07%3A00%202024&toTime=Mon%20May%2006%2012%3A49%3A43%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:54:43.786] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Fri%20Apr%2012%2012%3A54%3A37%20GMT%2B07%3A00%202024&toTime=Sun%20May%2026%2012%3A54%3A41%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:56:01.041] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2012%3A55%3A56%20GMT%2B07%3A00%202024&toTime=Fri%20May%2017%2012%3A55%3A58%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:56:15.332] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Sun%20May%2005%2012%3A56%3A13%20GMT%2B07%3A00%202024&toTime=Fri%20May%2017%2012%3A55%3A58%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T12:56:23.248] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Sat%20May%2011%2012%3A56%3A21%20GMT%2B07%3A00%202024&toTime=Fri%20May%2017%2012%3A55%3A58%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:37:14.366] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=2024-1-1&toTime=2024-5-5',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '20f808eb-5c45-4802-9c38-a56533e5a4d4',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T13:37:23.540] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=2024-01-01&toTime=2024-05-05',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '1851ba3f-12df-43f0-ac56-58b13c0ef829',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T13:37:25.873] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=2024-01-01&toTime=2024-05-06',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': '08bf609e-e495-4472-b26e-fd26222f52df',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '121'
+  }
+}
+[2024-05-06T13:47:29.880] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:48:32.273] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A47%3A34%20GMT%2B07%3A00%202024&toTime=Fri%20May%2024%2013%3A47%3A37%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:49:08.312] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A47%3A34%20GMT%2B07%3A00%202024&toTime=Fri%20May%2024%2013%3A47%3A37%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:54:58.573] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A54%3A55%20GMT%2B07%3A00%202024&toTime=Fri%20May%2024%2013%3A54%3A56%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:55:34.278] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A55%3A30%20GMT%2B07%3A00%202024&toTime=Fri%20May%2010%2013%3A55%3A32%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:57:13.558] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A57%3A08%20GMT%2B07%3A00%202024&toTime=Fri%20May%2010%2013%3A57%3A10%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:58:44.757] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A58%3A39%20GMT%2B07%3A00%202024&toTime=Fri%20May%2031%2013%3A58%3A42%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:58:49.592] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A58%3A39%20GMT%2B07%3A00%202024&toTime=Thu%20May%2002%2013%3A58%3A47%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:58:57.758] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A58%3A39%20GMT%2B07%3A00%202024&toTime=Thu%20May%2002%2013%3A58%3A47%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:58:58.970] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A58%3A39%20GMT%2B07%3A00%202024&toTime=Thu%20May%2002%2013%3A58%3A47%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T13:59:59.502] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A59%3A55%20GMT%2B07%3A00%202024&toTime=Sat%20May%2004%2013%3A59%3A57%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:00:04.901] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2013%3A59%3A55%20GMT%2B07%3A00%202024&toTime=Sat%20May%2011%2014%3A00%3A03%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:09:13.189] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-electric-water-bill?fromTime=Wed%20May%2001%2014%3A09%3A09%20GMT%2B07%3A00%202024&toTime=Fri%20May%2031%2014%3A09%3A11%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:13:59.970] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2014%3A13%3A55%20GMT%2B07%3A00%202024&toTime=Sun%20May%2005%2014%3A13%3A57%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:14:03.651] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-electric-water-bill?fromTime=Wed%20May%2001%2014%3A13%3A55%20GMT%2B07%3A00%202024&toTime=Sun%20May%2005%2014%3A14%3A02%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:14:06.306] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-electric-water-bill?fromTime=Wed%20May%2001%2014%3A13%3A55%20GMT%2B07%3A00%202024&toTime=Thu%20May%2009%2014%3A14%3A04%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:14:08.661] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2014%3A13%3A55%20GMT%2B07%3A00%202024&toTime=Thu%20May%2009%2014%3A14%3A04%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:14:11.152] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-electric-water-bill?fromTime=Wed%20May%2001%2014%3A13%3A55%20GMT%2B07%3A00%202024&toTime=Thu%20May%2009%2014%3A14%3A04%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:25:54.209] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/signup',
+  IP: '::1',
+  HEADER: {
+    'content-type': 'application/json',
+    'user-agent': 'PostmanRuntime/7.37.3',
+    accept: '*/*',
+    'postman-token': 'a78a5315-d0fc-4d39-81b3-dba003fc97d3',
+    host: 'localhost:8080',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive',
+    'content-length': '262'
+  }
+}
+[2024-05-06T14:25:54.288] [WARN] signup - UserDto {
+  id: 6,
+  firstName: 'Phùng',
+  lastName: 'Đức Mạnh',
+  gender: 1,
+  email: 'ducmanhphungducmanh2@gmail.com',
+  idRole: 3,
+  idResource: null,
+  accountStatus: 0,
+  createdAt: 2024-05-06T07:25:54.277Z,
+  updatedAt: 2024-05-06T07:25:54.277Z,
+  userRole: undefined
+}
+[2024-05-06T14:33:22.763] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/signup',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '147',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:33:23.994] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/signup',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '147',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:35:29.450] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/signup',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '143',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T14:35:29.497] [WARN] signup - UserDto {
+  id: 7,
+  firstName: 'Yoki',
+  lastName: 'Kim',
+  gender: 0,
+  email: 'ducmanhphungduc@gmail.com',
+  idRole: 3,
+  idResource: null,
+  accountStatus: 0,
+  createdAt: 2024-05-06T07:35:29.478Z,
+  updatedAt: 2024-05-06T07:35:29.478Z,
+  userRole: undefined
+}
+[2024-05-06T14:35:32.858] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:12:04.761] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:12:05.001] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:12:53.282] [INFO] request info - {
+  METHOD: 'PUT',
+  URL: '/user/active2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '58',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:12:56.015] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:12:56.292] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/my-info',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzMTc2LCJleHAiOjE3NDY1MTkxNzZ9.JBOI2BEAkvmTiRsKzH1VWm--cgUf8WhSHNpVTfIMZ-Y',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:13:39.933] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:13:40.174] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:13:44.065] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:14:07.141] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:14:07.383] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:14:23.731] [INFO] request info - {
+  METHOD: 'PUT',
+  URL: '/user/active2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '58',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:16:52.970] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:16:53.186] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:17:53.845] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:19:03.915] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:19:04.172] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:19:14.935] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:29.653] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:29.863] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:42.523] [INFO] request info - {
+  METHOD: 'PUT',
+  URL: '/user/active2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '58',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:43.619] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/send-activation-code2/ducmanhphungduc@gmail.com',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:54.971] [INFO] request info - {
+  METHOD: 'PUT',
+  URL: '/user/active2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '58',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:56.010] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '52',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:56.233] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/my-info',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:57.211] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/semester-open',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:58.620] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:20:59.491] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/all-room-added/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:00.396] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/regis/create',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '38',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:00.455] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/all-room-added/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:02.382] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/room/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:02.583] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/res/3',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 13; 2201117TG Build/TKQ1.221114.001)',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip'
+  }
+}
+[2024-05-06T15:21:03.430] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/all-room-added/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:04.002] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/regis/create',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '38',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:04.736] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/all-room-added/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:05.966] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/room/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:07.115] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/room/item-added/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:07.189] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/res/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 13; 2201117TG Build/TKQ1.221114.001)',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip'
+  }
+}
+[2024-05-06T15:21:07.250] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/res/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 13; 2201117TG Build/TKQ1.221114.001)',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip'
+  }
+}
+[2024-05-06T15:21:08.444] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/item/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:09.322] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/room/item-added/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:09.741] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/room/1',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:10.105] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/all-room-added/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:10.527] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/2',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:10.942] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester/semester-open',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:11.450] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/my-info',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:12.715] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:12.921] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/my-bill-by-semester/1/7',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:15.861] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/my-bill-by-semester/2/7',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:17.294] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/5',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:21.387] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:21:21.429] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/my-bill-by-semester/1/7',
+  IP: '::ffff:192.168.1.254',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNzE0OTgzNjU2LCJleHAiOjE3NDY1MTk2NTZ9.bfrwUPPGewyHFTXZpO5I82CmpIhkkF4eR9JEXIogwMY',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:01.580] [INFO] request info - {
+  METHOD: 'POST',
+  URL: '/user/login',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    'content-type': 'application/json; charset=UTF-8',
+    'content-length': '42',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:01.976] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/my-info',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:04.050] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/semester',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:04.312] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/get-all-by-semester/1',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:18.524] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/my-info',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:28.458] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-electric-water-bill?fromTime=Wed%20May%2001%2015%3A28%3A23%20GMT%2B07%3A00%202024&toTime=Sat%20May%2004%2015%3A28%3A26%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:28:33.024] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-electric-water-bill?fromTime=Wed%20May%2001%2015%3A28%3A23%20GMT%2B07%3A00%202024&toTime=Fri%20May%2010%2015%3A28%3A31%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:29:30.559] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/bill/chart-room-bill?fromTime=Wed%20May%2001%2015%3A28%3A23%20GMT%2B07%3A00%202024&toTime=Fri%20May%2010%2015%3A28%3A31%20GMT%2B07%3A00%202024',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:29:33.859] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/user/my-info',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0OTg0MDgxLCJleHAiOjE3NDY1MjAwODF9.i0jbeMaug45c__1m_sK5RP4U5GRqCcRJEzwHnDTYaz4',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip',
+    'user-agent': 'okhttp/3.12.1'
+  }
+}
+[2024-05-06T15:29:39.178] [INFO] request info - {
+  METHOD: 'GET',
+  URL: '/res/5',
+  IP: '::ffff:192.168.1.86',
+  HEADER: {
+    'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 14; sdk_gphone64_x86_64 Build/UE1A.230829.036.A1)',
+    host: '192.168.1.86:8080',
+    connection: 'Keep-Alive',
+    'accept-encoding': 'gzip'
+  }
+}
