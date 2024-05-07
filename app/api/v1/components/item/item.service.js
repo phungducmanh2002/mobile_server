@@ -38,6 +38,10 @@ class ItemService {
       return null;
     }
     item.quantity += parseInt(quantity);
+    if(item.quantity < 0){
+      item.quantity = 0;
+    }
+
     return await item.save();
   }
   static async GetItemDetail(idItem) {

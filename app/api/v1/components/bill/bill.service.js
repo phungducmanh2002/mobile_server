@@ -306,7 +306,7 @@ class BillService {
   }
   static async GetAllRoomBillByTimeRange(fromTime, toTime) {
     const sql = `
-    select bill.*, semester.roomPrice
+    select bill.*, semester.roomPrice, room.roomName
     from (select * from bill where createdAt between :fromTime and :toTime ) as bill
     inner join regis
     on bill.idRegis = regis.id
@@ -314,6 +314,8 @@ class BillService {
     on regis.idRoomSemester = room_semester.id
     inner join semester
     on room_semester.idSemester = semester.id
+    inner join room
+    on room_semester.idRoom = room.id
     `;
 
     const bills = await sequelizeConfig.instance.query(sql, {
@@ -328,7 +330,7 @@ class BillService {
   }
   static async GetAllElectricWaterBillByTimeRange(fromTime, toTime) {
     const sql = `
-    select bill.*, semester.electricPrice, semester.waterPrice, electricWater.electricNumber, electricWater.waterNumber
+    select bill.*, semester.electricPrice, semester.waterPrice, electricWater.electricNumber, electricWater.waterNumber, room.roomName
     from (select * from bill where createdAt between :fromTime and :toTime) as bill
     inner join electricWater
     on bill.idElectricWater = electricWater.id
@@ -336,6 +338,8 @@ class BillService {
     on electricWater.idRoomSemester = room_semester.id
     inner join semester
     on room_semester.idSemester = semester.id
+    inner join room
+    on room_semester.idRoom = room.id
     `;
 
     const bills = await sequelizeConfig.instance.query(sql, {

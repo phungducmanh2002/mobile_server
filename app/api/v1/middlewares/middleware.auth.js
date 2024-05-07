@@ -24,7 +24,7 @@ class MiddleWare {
     return [
       async (req, res, next) => {
         const token = MiddleWare.GetUserToken(req);
-        console.log(`TOKEN: ${token}`);
+        // console.log(`TOKEN: ${token}`);
         if (token) {
           const tokenDecode = await MiddleWare.GetUserIdFromToken(token);
           const userId = tokenDecode?.id;
